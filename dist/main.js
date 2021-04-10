@@ -1,0 +1,1 @@
+fetch("https://api.quotable.io/random").then((e=>e.json())).then((e=>{const t=document.createElement("div");t.innerText=e.content,document.querySelector("body").appendChild(t)}));
