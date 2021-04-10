@@ -1,7 +1,7 @@
 fetch("https://api.quotable.io/random")
   .then((res) => res.json())
   .then((res) => {
-    const div = document.createElement("div");
-    div.innerText = res.content;
-    document.querySelector("body").appendChild(div);
+    const h2 = document.createElement("h2");
+    h2.innerText = res.content;
+    document.querySelector("body").appendChild(h2);
   });
